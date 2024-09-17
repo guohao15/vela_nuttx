@@ -172,6 +172,8 @@ const struct mountpt_operations g_littlefs_operations =
   NULL,                   /* mmap */
   littlefs_truncate,      /* truncate */
   NULL,                   /* poll */
+  NULL,                   /* readv */
+  NULL,                   /* writev */
 
   littlefs_sync,          /* sync */
   littlefs_dup,           /* dup */
